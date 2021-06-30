@@ -3,20 +3,21 @@ package com.everis.listadecontatos.feature.contato
 import android.os.Bundle
 import android.view.View
 import com.everis.listadecontatos.R
+<<<<<<< HEAD
 import com.everis.listadecontatos.application.ContatoApplication
 import com.everis.listadecontatos.bases.BaseActivity
+=======
+>>>>>>> parent of 6a2d1c6 (melhoris e termino do app basico)
 import com.everis.listadecontatos.feature.listacontatos.model.ContatosVO
 import kotlinx.android.synthetic.main.activity_contato.*
-import kotlinx.android.synthetic.main.activity_contato.toolBar
 
-class ContatoActivity : BaseActivity() {
+class ContatoActivity : AppCompatActivity() {
 
     private var idContato: Int = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contato)
-        setupToolBar(toolBar, "Contato",true)
         setupContato()
         btnSalvarConato.setOnClickListener { onClickSalvarContato() }
     }
